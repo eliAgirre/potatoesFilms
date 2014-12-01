@@ -1,0 +1,13 @@
+{
+  "name": "potatoesFilms",
+  "description": "Use an API request of movies",
+  "main": "server.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.x",
+    "body-parser": "~1.0.0",
+    "request": "^2.45.0",
+    "morgan": "~1.0.0",
+    "ejs": "~0.8.5"
+  }
+}
