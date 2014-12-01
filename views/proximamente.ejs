@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf8" />
+		<title> Próximamente </title>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<h1> Próximamente </h1>
+
+			<% include menu_nav.html %>
+
+			<h3> Título: </h3>
+
+			<a href="/exodus"> <p> <%= body.movies[0].title %> </p> </a>
+
+			<h3> Año: </h3>
+
+			<p> <%= body.movies[0].year %> </p>
+
+			<h3> Duración: </h3>
+
+			<p> <%= body.movies[0].runtime %> mins </p>
+
+
+			<h3> Título: </h3>
+
+			<a href="/inherentVice"> <p> <%= body.movies[1].title %> </p> </a>
+
+			<h3> Año: </h3>
+
+			<p> <%= body.movies[1].year %> </p>
+
+			<h3> Duración: </h3>
+
+			<p> <%= body.movies[1].runtime %> mins </p>
+
+			
+		</div> <!-- Cierre del div container -->
+
+	</body>
+</html>

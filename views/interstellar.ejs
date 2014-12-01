@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf8" />
+		<title> Interstellar </title>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<h1> <%= body.movies[0].title %> </h1>
+
+			<h3> Año: </h3>
+
+			<p> <%= body.movies[0].year %> </p>
+
+			<h3> Duración: </h3>
+
+			<p> <%= body.movies[0].runtime %> mins </p>
+
+
+			<h3> Sinopsis: </h3>
+
+			<p> <%= body.movies[0].synopsis %> </p>
+
+			<a href="/cines"> Atrás </a>
+			
+		</div> <!-- Cierre del div container -->
+
+	</body>
+</html>
