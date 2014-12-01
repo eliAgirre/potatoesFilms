@@ -14,10 +14,10 @@ module.exports = function(app) {
 
 
 	// =====================================
-	// PELÍCULAS ===========================
+	// CARTELERA ===========================
 	// =====================================
 
-	app.get('/peliculas', function(req, res) {
+	app.get('/cartelera', function(req, res) {
 
 		var url='http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=25uu9nryfxqb5b65umh6mkkr';
 
@@ -29,7 +29,7 @@ module.exports = function(app) {
 
 				console.log(body);
 
-				res.render('peliculas', {
+				res.render('cartelera', {
 					
 					body: body
 					
@@ -45,13 +45,14 @@ module.exports = function(app) {
 		
 	});
 
-
 	// =====================================
-	// INFO ===========================
+	// INFO DE CADA PELÍCULA ===============
 	// =====================================
-	app.get('/toyStory', function(req, res) {
 
-		var url='http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=25uu9nryfxqb5b65umh6mkkr&q=Toy+Story+3&page_limit=1';
+	app.get('/hungerGames', function(req, res) {
+
+
+		var url='http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=25uu9nryfxqb5b65umh6mkkr&q=The+Hunger+Games&page_limit=1';
 
 		var request = require('request');
 
@@ -61,7 +62,7 @@ module.exports = function(app) {
 
 				console.log(body);
 
-				res.render('toyStory', {
+				res.render('hungerGames', {
 					
 					body: body
 					
@@ -76,5 +77,35 @@ module.exports = function(app) {
 		});
 		
 	});
+
+
+	app.get('/bigHero', function(req, res) {
+
+		var url='http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=25uu9nryfxqb5b65umh6mkkr&q=Big+Hero+6&page_limit=1';
+
+		var request = require('request');
+
+		request({url:url, json:"true"}, function (error, response, body, id) {
+
+			if (!error && response.statusCode == 200) {
+
+				console.log(body);
+
+				res.render('bigHero', {
+					
+					body: body
+					
+				})
+			}
+			else {
+
+				res.render('index');
+
+			}
+
+		});
+		
+	});
+
 
 }

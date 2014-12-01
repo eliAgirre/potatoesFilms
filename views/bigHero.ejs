@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf8" />
+		<title> Big Hero 6 </title>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<h1> <%= body.movies[0].title %> </h1>
+
+			<h3> Año: </h3>
+
+			<p> <%= body.movies[0].year %> </p>
+
+			<h3> Duración: </h3>
+
+			<p> <%= body.movies[0].runtime %> mins </p>
+
+
+			<h3> Sinopsis: </h3>
+
+			<p> <%= body.movies[0].synopsis %> </p>
+
+			<h3> Reparto: </h3>
+
+			<p> <%= body.movies[0].abridged_cast[0].name %> --> <%= body.movies[0].abridged_cast[0].characters %> </p>
+
+			<p> <%= body.movies[0].abridged_cast[1].name %> --> <%= body.movies[0].abridged_cast[1].characters %> </p>
+
+			<p> <%= body.movies[0].abridged_cast[2].name %> --> <%= body.movies[0].abridged_cast[2].characters %> </p>
+
+			<p> <%= body.movies[0].abridged_cast[3].name %> --> <%= body.movies[0].abridged_cast[3].characters %> </p>
+
+			<p> <%= body.movies[0].abridged_cast[4].name %> --> <%= body.movies[0].abridged_cast[4].characters %> </p> 
+
+			<a href="/cartelera"> Atrás </a>
+			
+		</div> <!-- Cierre del div container -->
+
+	</body>
+</html>
