@@ -21,20 +21,21 @@ Documentación de la API:
 
 
 
-Películas:
+Taquilla:
 
- http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=[key]
+http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=[key]
 
 En cines:
 
- http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=[key]
+http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=[key]
 
-Opening:
+Estrenos:
 
- http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?apikey=[key]
+http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?apikey=[key]
 
 
-Upcoming:
+Próximamente:
 
- http://api.rottentomatoes.com/api/public/v1.0/lists/movies/upcoming.json?apikey=[key]
+http://api.rottentomatoes.com/api/public/v1.0/lists/movies/upcoming.json?apikey=[key]
+
 
