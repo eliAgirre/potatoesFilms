@@ -7,7 +7,7 @@ module.exports = function(app) {
 	// =====================================
 	app.get('/', function(req, res) {
 
-		res.render('index.ejs');
+		res.redirect('/cartelera');
 
 	});
 
@@ -37,7 +37,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -69,7 +69,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -101,7 +101,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -133,7 +133,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -169,7 +169,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -198,7 +198,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -229,7 +229,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -257,7 +257,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -289,7 +289,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -317,7 +317,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -348,7 +348,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 
@@ -377,7 +377,7 @@ module.exports = function(app) {
 			}
 			else {
 
-				res.render('index');
+				res.redirect('/cartelera');
 
 			}
 

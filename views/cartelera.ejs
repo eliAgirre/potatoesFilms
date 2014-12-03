@@ -4,6 +4,7 @@
 
 		<meta charset="utf8" />
 		<title> Cartelera </title>
+		<link rel="stylesheet" href="css/main.css" />
 
 	</head>
 
@@ -11,35 +12,49 @@
 
 		<div class="container">
 
-			<h1> Cartelera </h1>
+			<% include header.html %>
 
 			<% include menu_nav.html %>
 
-			<h3> Título: </h3>
+			<h2> Cartelera </h2>
 
-			<a href="/hungerGames"> <p> <%= body.movies[0].title %> </p> </a>
+			<section class="movies">
 
-			<h3> Año: </h3>
+				<div id="movie1">
 
-			<p> <%= body.movies[0].year %> </p>
+					<a href="/hungerGames"> <h3 id="titulo"> <%= body.movies[0].title %> </h3> </a>
 
-			<h3> Duración: </h3>
+					<a href="/hungerGames"> <img src="img/icon/theHunterGames.jpg"></img> </a>
 
-			<p> <%= body.movies[0].runtime %> mins </p>
+					<h3> Año: </h3>
+
+					<p> <%= body.movies[0].year %> </p>
+
+					<h3> Duración: </h3>
+
+					<p> <%= body.movies[0].runtime %> mins </p>
+
+				</div> <!-- Cierre del div movie1 -->
 
 
-			<h3> Título: </h3>
+				<div id="movie2">
 
-			<a href="/bigHero"> <p> <%= body.movies[1].title %> </p> </a>
+					<a href="/bigHero"> <h3 id="titulo"> <%= body.movies[2].title %> </h3> </a>
 
-			<h3> Año: </h3>
+					<a href="/bigHero"> <img src="img/icon/bigHero6.jpg"></img> </a>
 
-			<p> <%= body.movies[1].year %> </p>
+					<h3> Año: </h3>
 
-			<h3> Duración: </h3>
+					<p> <%= body.movies[2].year %> </p>
 
-			<p> <%= body.movies[1].runtime %> mins </p>
+					<h3> Duración: </h3>
 
+					<p> <%= body.movies[2].runtime %> mins </p>
+
+				</div> <!-- Cierre del div movie2 -->
+
+
+			</section> <!-- Cierre de la sección de peliculas -->
 			
 		</div> <!-- Cierre del div container -->
 

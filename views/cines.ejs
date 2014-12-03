@@ -4,6 +4,7 @@
 
 		<meta charset="utf8" />
 		<title> En Cines </title>
+		<link rel="stylesheet" href="css/main.css" />
 
 	</head>
 
@@ -11,35 +12,45 @@
 
 		<div class="container">
 
-			<h1> En Cines </h1>
+			<% include header.html %>
 
 			<% include menu_nav.html %>
 
-			<h3> Título: </h3>
+			<h2> En cines </h2>
 
-			<a href="/madagascar"> <p> <%= body.movies[0].title %> </p> </a>
+			<section class="movies">
 
-			<h3> Año: </h3>
+				<div id="movie3">
 
-			<p> <%= body.movies[0].year %> </p>
+					<a href="/madagascar"> <h3 id="titulo"> <%= body.movies[0].title %> </h3> </a>
 
-			<h3> Duración: </h3>
+					<a href="/madagascar"> <img src="img/icon/penguinsMadagascar.jpg"></img> </a>
 
-			<p> <%= body.movies[0].runtime %> mins </p>
+					<h3> Año: </h3>
 
+					<p> <%= body.movies[0].year %> </p>
 
-			<h3> Título: </h3>
+					<h3> Duración: </h3>
 
-			<a href="/interstellar"> <p> <%= body.movies[3].title %> </p> </a>
+					<p> <%= body.movies[0].runtime %> mins </p>
 
-			<h3> Año: </h3>
+				</div> <!-- Cierre del div movie3 -->
 
-			<p> <%= body.movies[3].year %> </p>
+				<div id="movie4">
 
-			<h3> Duración: </h3>
+					<a href="/interstellar"> <h3 id="titulo"> <%= body.movies[3].title %> </h3> </a>
 
-			<p> <%= body.movies[3].runtime %> mins </p>
+					<a href="/interstellar"> <img src="img/icon/interstellar.jpg"></img> </a>
 
+					<h3> Año: </h3>
+
+					<p> <%= body.movies[3].year %> </p>
+
+					<h3> Duración: </h3>
+
+					<p> <%= body.movies[3].runtime %> mins </p>
+
+				</div> <!-- Cierre del div movie4 -->
 			
 		</div> <!-- Cierre del div container -->
 

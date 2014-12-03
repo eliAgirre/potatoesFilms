@@ -19,18 +19,13 @@ body{
 
 }
 
-section, nav {
+h1{
 
-	display: block;
-
+	color: #AB395D;
+	font-size: 46px;
+	margin-bottom: 10px;
 }
 
-h2{
-	
-	margin: 40px 40px 40px 200px;
-	font-size: 48px;
-
-}
 
 /***********************************************************************************************
 									   		Selectores por CLASE 
@@ -43,105 +38,52 @@ h2{
 	
 }
 
-
-
-/* Peliculas ****************************/
-.movies{
+/* Información de cada película */
+.info{
 
 	display: -webkit-box; /* Chrome*/
 	-webkit-box-orient: horizontal; /* Películas en horizontal */
-	-webkit-box-pack: center;
 
 }
-
-
-/* Links de peliculas */
-.movies a{
-
-	color: #AB395D;
-	text-decoration: none;
-
-}
-
-.movies a:hover{
-
-	color: #404040;
-
-}
-
-
-/* Imágenes de las peliculas */
-.movies img{
-
-	margin-bottom: 10px;
-
-}
-
-/* Datos de las peliculas */
-.movies h3{
-
-	margin-left: 5px;
-
-}
-
-.movies p{
-
-	margin-top: 5px;
-	margin-left: 25px;
-	margin-bottom: 10px;
-
-}
-
 
 /* ************************************************************************************************
 											Selectores por ID
 ************************************************************************************************ */
 
-/* Menú ****************************/
-#menu_nav{
+/* Cartelera de la película */
+#imagen{
 
-	background-color: #610B21;
-	height: 20px;
-	padding: 5px;
+	margin-left: 20px;
+}
+
+/* Datos de la película */
+#data{
+
+	margin-left: 70px;
+	margin-top: 40px;
 
 }
 
-/* Link del menú */
-#menu_nav a {
+#data h3{
 
-	color: white;
-	text-decoration: none;
-
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-/* Link cambia de color */
-#menu_nav a:hover{
+#data p{
 
-	color: #ECB8C5;
-
-}
-
-/* Item del menú */
-#menu_nav li {
-
-	display: inline-block; /* menú horizontal */
-	margin-right: 20px;
-
-}
-
-/* Título de peliculas */
-#titulo{
-
+	margin-left: 10px;
 	margin-bottom: 20px;
-	margin-left: 0px;
-
 }
 
-/* Pelicula ****************************/
-#movie1, #movie2, #movie3, #movie4, #movie5, #movie6, #movie7, #movie8 {
+#sinopsis{
 
-	padding-left: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 20px;
+	text-align: justify;
+	width: 60%;
+}
+
+#reparto{
+
+	margin-left: 10px;
+	margin-bottom: 20px;
 }

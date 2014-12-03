@@ -4,6 +4,7 @@
 
 		<meta charset="utf8" />
 		<title> The Hunger Games </title>
+		<link rel="stylesheet" href="css/movie.css" />
 
 	</head>
 
@@ -11,33 +12,78 @@
 
 		<div class="container">
 
-			<h1> <%= body.movies[0].title %> </h1>
+			<% include header.html %>
 
-			<h3> Año: </h3>
+			<center> <h1> <%= body.movies[0].title %> </h1> </center>
 
-			<p> <%= body.movies[0].year %> </p>
+			<section class="info">
 
-			<h3> Duración: </h3>
+				<div id="imagen">
 
-			<p> <%= body.movies[0].runtime %> mins </p>
+					<img src="img/cartel/theHunterGames.jpg"></img>
 
-			<h3> Sinopsis: </h3>
+				</div> <!-- Cierre del div imagen -->
 
-			<p> <%= body.movies[0].synopsis %> </p>
+				<div id="data">
 
-			<h3> Reparto: </h3>
+					<h3> Año: </h3>
 
-			<p> <%= body.movies[0].abridged_cast[0].name %> --> <%= body.movies[0].abridged_cast[0].characters %> </p>
+					<p> <%= body.movies[0].year %> </p>
 
-			<p> <%= body.movies[0].abridged_cast[1].name %> --> <%= body.movies[0].abridged_cast[1].characters %> </p>
+					<h3> Duración: </h3>
 
-			<p> <%= body.movies[0].abridged_cast[2].name %> --> <%= body.movies[0].abridged_cast[2].characters %> </p>
+					<p> <%= body.movies[0].runtime %> mins </p>
 
-			<p> <%= body.movies[0].abridged_cast[3].name %> --> <%= body.movies[0].abridged_cast[3].characters %> </p>
+					<h3> Sinopsis: </h3>
 
-			<p> <%= body.movies[0].abridged_cast[4].name %> --> <%= body.movies[0].abridged_cast[4].characters %> </p> 
+					<p id="sinopsis"> <%= body.movies[0].synopsis %> </p>
 
-			<a href="/cartelera"> Atrás </a>
+					<h3> Reparto: </h3>
+
+					<table id="reparto">
+
+					 	<!-- Fila 0 -->
+					 	<tr>
+					 		<td> <%= body.movies[0].abridged_cast[0].name %>  </td>
+					 		<td> <img src="img/flecha.png"></img> </td>
+					 		<td> <%= body.movies[0].abridged_cast[0].characters %> </td>
+					 	</tr>
+
+					 	<!-- Fila 1 -->
+					 	<tr>
+					 		<td> <%= body.movies[0].abridged_cast[1].name %> </td>
+					 		<td> <img src="img/flecha.png"></img> </td>
+					 		<td> <%= body.movies[0].abridged_cast[1].characters %> </td>
+					 	</tr>
+
+					 	<!-- Fila 2 -->
+					 	<tr>
+					 		<td> <%= body.movies[0].abridged_cast[2].name %> </td>
+					 		<td> <img src="img/flecha.png"></img> </td>
+					 		<td> <%= body.movies[0].abridged_cast[2].characters %></td>
+					 	</tr>
+
+					 	<!-- Fila 3 -->
+					 	<tr>
+					 		<td> <%= body.movies[0].abridged_cast[3].name %></td>
+					 		<td> <img src="img/flecha.png"></img> </td>
+					 		<td> <%= body.movies[0].abridged_cast[3].characters %> </td>
+					 	</tr>
+
+					 	<!-- Fila 4 -->
+					 	<tr>
+					 		<td> <%= body.movies[0].abridged_cast[4].name %></td>
+					 		<td> <img src="img/flecha.png"></img> </td>
+					 		<td> <%= body.movies[0].abridged_cast[4].characters %> </td>
+					 	</tr>
+
+		 			</table> <!--  Cierre de la tabla-->
+
+					<a href="/cartelera"> <img src="img/atras.png"></img> </a>
+
+				</div> <!-- Cierre del div data -->
+
+			</section> <!-- Cierre la info -->
 			
 		</div> <!-- Cierre del div container -->
 
