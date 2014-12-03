@@ -59,8 +59,9 @@ h1{
 /* Datos de la película */
 #data{
 
-	margin-left: 70px;
+	margin-left: 30px;
 	margin-top: 40px;
+	width: 50%;
 
 }
 
@@ -79,11 +80,10 @@ h1{
 #sinopsis{
 
 	text-align: justify;
-	width: 60%;
+
 }
 
 #reparto{
 
-	margin-left: 10px;
 	margin-bottom: 20px;
 }
